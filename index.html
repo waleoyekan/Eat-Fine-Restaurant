@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="Eat Fine - Order authentic Igbo soups and Nigerian dishes delivered to your doorstep. Egusi, Oha, Nsala, Bitterleaf and more.">
+
+   <!--=============== FAVICON ===============-->
+   <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+   <!--=============== REMIXICONS ===============-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+
+   <!--=============== SWIPER CSS ===============-->
+   <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+   <!--=============== CSS ===============-->
+   <link rel="stylesheet" href="assets/css/styles.css">
+
+   <title>Eat Fine | Authentic Nigerian Igbo Soups Delivered</title>
+</head>
+<body>
+   <!--==================== HEADER ====================-->
+   <header class="header" id="header">
+      <nav class="nav container">
+         <a href="#" class="nav__logo">
+            <i class="ri-restaurant-2-fill"></i> Eat Fine
+         </a>
+
+         <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+               <li class="nav__item">
+                  <a href="#home" class="nav__link active-link">Home</a>
+               </li>
+               <li class="nav__item">
+                  <a href="#menu" class="nav__link">Menu</a>
+               </li>
+               <li class="nav__item">
+                  <a href="#reviews" class="nav__link">Reviews</a>
+               </li>
+               <li class="nav__item">
+                  <a href="#app" class="nav__link">Our App</a>
+               </li>
+               <li class="nav__item">
+                  <a href="#map" class="nav__link">Find Us</a>
+               </li>
+            </ul>
+
+            <div class="nav__close" id="nav-close">
+               <i class="ri-close-line"></i>
+            </div>
+         </div>
+
+         <div class="nav__actions">
+            <i class="ri-moon-line change-theme" id="theme-button"></i>
+            <i class="ri-shopping-cart-2-line nav__cart" id="cart-icon"></i>
+            <span class="nav__cart-count" id="cart-count">0</span>
+
+            <div class="nav__toggle" id="nav-toggle">
+               <i class="ri-menu-line"></i>
+            </div>
+         </div>
+      </nav>
+   </header>
+
+   <!--==================== CART SIDEBAR ====================-->
+   <div class="cart-sidebar" id="cart-sidebar">
+      <div class="cart__header">
+         <h3 class="cart__title"><i class="ri-shopping-cart-2-line"></i> Your Cart</h3>
+         <i class="ri-close-line cart__close" id="cart-close"></i>
+      </div>
+      <div class="cart__items" id="cart-items">
+         <p class="cart__empty">Your cart is empty</p>
+      </div>
+      <div class="cart__footer" id="cart-footer" style="display:none;">
+         <div class="cart__total">
+            <span>Total:</span>
+            <span id="cart-total">₦0</span>
+         </div>
+         <button class="button cart__checkout" id="checkout-btn">
+            Order via WhatsApp <i class="ri-whatsapp-line"></i>
+         </button>
+      </div>
+   </div>
+   <div class="cart-overlay" id="cart-overlay"></div>
+
+   <!--==================== MAIN ====================-->
+   <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home section" id="home">
+         <div class="home__container container grid">
+            <div class="home__data">
+               <h1 class="home__title">
+                  Enjoy Authentic <span>Igbo Soups</span>
+               </h1>
+               <p class="home__description">
+                  We bring the rich taste of traditional Igbo cuisine straight 
+                  to your doorstep. Freshly prepared with love, delivered fast across Lagos & Abuja.
+               </p>
+               <a href="#menu" class="button">
+                  Order Now <i class="ri-arrow-right-line"></i>
+               </a>
+
+               <div class="home__social">
+                  <a href="https://www.instagram.com/" target="_blank" class="home__social-link">
+                     <i class="ri-instagram-line"></i>
+                  </a>
+                  <a href="https://api.whatsapp.com/send?phone=2348064494713&text=Hello, I'd like to order!" target="_blank" class="home__social-link">
+                     <i class="ri-whatsapp-line"></i>
+                  </a>
+                  <a href="https://web.telegram.org/" target="_blank" class="home__social-link">
+                     <i class="ri-telegram-line"></i>
+                  </a>
+                  <a href="https://x.com/" target="_blank" class="home__social-link">
+                     <i class="ri-twitter-x-line"></i>
+                  </a>
+               </div>
+            </div>
+
+            <div class="home__image">
+               <img src="assets/img/hero-img.png" alt="Delicious Oha Soup" class="home__img">
+               <div class="home__blob"></div>
+            </div>
+
+            <div class="home__info">
+               <div class="home__number">
+                  <span>Phone:</span>
+                  <span class="home__number-value">+234 801 234 5678</span>
+               </div>
+               <div class="home__comment">
+                  <i class="ri-star-fill"></i>
+                  "The best Egusi soup I've tasted outside my mama's kitchen. 10/10!" — Chioma A.
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!--==================== SERVICE ====================-->
+      <section class="service section">
+         <span class="section__subtitle">OUR SERVICE</span>
+         <h2 class="section__title">How Does It Work?</h2>
+
+         <div class="service__container container grid">
+            <article class="service__card">
+               <div class="service__icon">
+                  <img src="assets/img/service-img-1.svg" alt="Easy to Order" class="service__img">
+               </div>
+               <h3 class="service__title">Easy To Order</h3>
+               <p class="service__description">
+                  Just a few taps and your favourite Igbo soup is on the way.
+               </p>
+            </article>
+
+            <article class="service__card">
+               <div class="service__icon">
+                  <img src="assets/img/service-img-2.svg" alt="Fastest Delivery" class="service__img">
+               </div>
+               <h3 class="service__title">Fastest Delivery</h3>
+               <p class="service__description">
+                  We deliver within 45 minutes across Lagos and Abuja.
+               </p>
+            </article>
+
+            <article class="service__card">
+               <div class="service__icon">
+                  <img src="assets/img/service-img-3.svg" alt="Best Quality" class="service__img">
+               </div>
+               <h3 class="service__title">Best Quality</h3>
+               <p class="service__description">
+                  Fresh ingredients, authentic recipes from Igbo kitchens.
+               </p>
+            </article>
+         </div>
+      </section>
+
+      <!--==================== MENU ====================-->
+      <section class="menu section" id="menu">
+         <span class="section__subtitle">OUR MENU</span>
+         <h2 class="section__title">Most Popular Soups</h2>
+
+         <div class="menu__filters" id="menu-filters">
+            <button class="menu__filter active" data-filter="all">All</button>
+            <button class="menu__filter" data-filter="soups">Soups</button>
+            <button class="menu__filter" data-filter="swallows">Swallows</button>
+            <button class="menu__filter" data-filter="drinks">Drinks</button>
+         </div>
+
+         <div class="menu__container container grid" id="menu-container">
+            <!-- Egusi Soup -->
+            <article class="menu__card" data-category="soups" data-name="Egusi Soup with Assorted Meat" data-price="5500">
+               <div class="menu__img-box">
+                  <img src="assets/img/food-egusi.png" alt="Egusi Soup" class="menu__img">
+               </div>
+               <div class="menu__data">
+                  <div class="menu__names">
+                     <h3 class="menu__name">Egusi <br> Soup</h3>
+                     <span class="menu__subtitle">Assorted Meat</span>
+                  </div>
+                  <span class="menu__amount">Large Bowl</span>
+                  <div class="menu__bottom">
+                     <span class="menu__price">₦5,500</span>
+                     <button class="menu__add" aria-label="Add Egusi Soup to cart">
+                        <i class="ri-add-line"></i>
+                     </button>
+                  </div>
+               </div>
+            </article>
+
+            <!-- Oha Soup -->
+            <article class="menu__card" data-category="soups" data-name="Oha Soup with Goat Meat" data-price="6000">
+               <div class="menu__img-box">
+                  <img src="assets/img/food-oha.png" alt="Oha Soup" class="menu__img">
+               </div>
+               <div class="menu__data">
+                  <div class="menu__names">
+                     <h3 class="menu__name">Oha <br> Soup</h3>
+                     <span class="menu__subtitle">Goat Meat</span>
+                  </div>
+                  <span class="menu__amount">Large Bowl</span>
+                  <div class="menu__bottom">
+                     <span class="menu__price">₦6,000</span>
+                     <button class="menu__add" aria-label="Add Oha Soup to cart">
+                        <i class="ri-add-line"></i>
+                     </button>
+                  </div>
+               </div>
+            </article>
+
+            <!-- Nsala Soup -->
+            <article class="menu__card" data-category="soups" data-name="Ofe Nsala (White Soup) with Catfish" data-price="7000">
+               <div class="menu__img-box">
+                  <img src="assets/img/food-nsala.png" alt="Nsala Soup" class="menu__img">
+               </div>
+               <div class="menu__data">
+                  <div class="menu__names">
+                     <h3 class="menu__name">Ofe <br> Nsala</h3>
+                     <span class="menu__subtitle">White Soup & Catfish</span>
+                  </div>
+                  <span class="menu__amount">Large Bowl</span>
+                  <div class="menu__bottom">
+                     <span class="menu__price">₦7,000</span>
+                     <button class="menu__add" aria-label="Add Nsala Soup to cart">
+                        <i class="ri-add-line"></i>
+                     </button>
+                  </div>
+               </div>
+            </article>
+
+            <!-- Bitterleaf Soup -->
+            <article class="menu__card" data-category="soups" data-name="Bitterleaf Soup (Ofe Onugbu)" data-price="5000">
+               <div class="menu__img-box">
+                  <img src="assets/img/food-bitterleaf.png" alt="Bitterleaf Soup" class="menu__img">
+               </div>
+               <div class="menu__data">
+                  <div class="menu__names">
+                     <h3 class="menu__name">Bitterleaf <br> Soup</h3>
+                     <span class="menu__subtitle">Ofe Onugbu</span>
+                  </div>
+                  <span class="menu__amount">Large Bowl</span>
+                  <div class="menu__bottom">
+                     <span class="menu__price">₦5,000</span>
+                     <button class="menu__add" aria-label="Add Bitterleaf Soup to cart">
+                        <i class="ri-add-line"></i>
+                     </button>
+                  </div>
+               </div>
+            </article>
+
+            <!-- Semo -->
+            <article class="menu__card" data-category="swallows" data-name="Semo (Semolina)" data-price="1800">
+               <div class="menu__img-box">
+                  <img src="assets/img/food-semo.png" alt="Semo" class="menu__img">
+               </div>
+               <div class="menu__data">
+                  <div class="menu__names">
+                     <h3 class="menu__name">Semo <br> (Semolina)</h3>
+                     <span class="menu__subtitle">Light & Fluffy</span>
+                  </div>
+                  <span class="menu__amount">2 Wraps</span>
+                  <div class="menu__bottom">
+                     <span class="menu__price">₦1,800</span>
+                     <button class="menu__add" aria-label="Add Semo to cart">
+                        <i class="ri-add-line"></i>
+                     </button>
+                  </div>
+               </div>
+            </article>
+
+            <!-- Garri (Eba) -->
+            <article class="menu__card" data-category="swallows" data-name="Eba (Garri)" data-price="1500">
+               <div class="menu__img-box">
+                  <img src="assets/img/food-eba.png" alt="Eba Garri" class="menu__img">
+               </div>
+               <div class="menu__data">
+                  <div class="menu__names">
+                     <h3 class="menu__name">Eba <br> (Garri)</h3>
+                     <span class="menu__subtitle">Yellow or White</span>
+                  </div>
+                  <span class="menu__amount">2 Wraps</span>
+                  <div class="menu__bottom">
+                     <span class="menu__price">₦1,500</span>
+                     <button class="menu__add" aria-label="Add Eba to cart">
+                        <i class="ri-add-line"></i>
+                     </button>
+                  </div>
+               </div>
+            </article>
+
+            <!-- Fufu -->
+            <article class="menu__card" data-category="swallows" data-name="Akpu (Fufu)" data-price="1500">
+               <div class="menu__img-box">
+                  <img src="assets/img/food-fufu.png" alt="Akpu Fufu" class="menu__img">
+               </div>
+               <div class="menu__data">
+                  <div class="menu__names">
+                     <h3 class="menu__name">Akpu <br> (Fufu)</h3>
+                     <span class="menu__subtitle">Smooth Cassava</span>
+                  </div>
+                  <span class="menu__amount">2 Wraps</span>
+                  <div class="menu__bottom">
+                     <span class="menu__price">₦1,500</span>
+                     <button class="menu__add" aria-label="Add Fufu to cart">
+                        <i class="ri-add-line"></i>
+                     </button>
+                  </div>
+               </div>
+            </article>
+
+            <!-- Palm Wine -->
+            <article class="menu__card" data-category="drinks" data-name="Fresh Palm Wine" data-price="3000">
+               <div class="menu__img-box">
+                  <img src="assets/img/food-palm-wine.png" alt="Fresh Palm Wine" class="menu__img">
+               </div>
+               <div class="menu__data">
+                  <div class="menu__names">
+                     <h3 class="menu__name">Fresh <br> Palm Wine</h3>
+                     <span class="menu__subtitle">Nkwu Elu</span>
+                  </div>
+                  <span class="menu__amount">1 Litre</span>
+                  <div class="menu__bottom">
+                     <span class="menu__price">₦3,000</span>
+                     <button class="menu__add" aria-label="Add Palm Wine to cart">
+                        <i class="ri-add-line"></i>
+                     </button>
+                  </div>
+               </div>
+            </article>
+
+            <!-- White Soup -->
+            <article class="menu__card" data-category="soups" data-name="White Soup (Ofe Nsala)" data-price="6500">
+               <div class="menu__img-box">
+                  <img src="assets/img/food-white-soup.png" alt="White Soup" class="menu__img">
+               </div>
+               <div class="menu__data">
+                  <div class="menu__names">
+                     <h3 class="menu__name">White <br> Soup</h3>
+                     <span class="menu__subtitle">Ofe Nsala & Fish</span>
+                  </div>
+                  <span class="menu__amount">Large Bowl</span>
+                  <div class="menu__bottom">
+                     <span class="menu__price">₦6,500</span>
+                     <button class="menu__add" aria-label="Add White Soup to cart">
+                        <i class="ri-add-line"></i>
+                     </button>
+                  </div>
+               </div>
+            </article>
+
+            <!-- Okro Soup -->
+            <article class="menu__card" data-category="soups" data-name="Okro Soup (Draw Soup)" data-price="5500">
+               <div class="menu__img-box">
+                  <img src="assets/img/food-okro.png" alt="Okro Soup" class="menu__img">
+               </div>
+               <div class="menu__data">
+                  <div class="menu__names">
+                     <h3 class="menu__name">Okro <br> Soup</h3>
+                     <span class="menu__subtitle">Draw Soup & Stockfish</span>
+                  </div>
+                  <span class="menu__amount">Large Bowl</span>
+                  <div class="menu__bottom">
+                     <span class="menu__price">₦5,500</span>
+                     <button class="menu__add" aria-label="Add Okro Soup to cart">
+                        <i class="ri-add-line"></i>
+                     </button>
+                  </div>
+               </div>
+            </article>
+         </div>
+      </section>
+
+      <!--==================== REVIEWS ====================-->
+      <section class="reviews section" id="reviews">
+         <span class="section__subtitle">OUR REVIEWS</span>
+         <h2 class="section__title">What They Say?</h2>
+
+         <div class="reviews__container container">
+            <div class="swiper reviews-swiper">
+               <div class="swiper-wrapper">
+                  <div class="swiper-slide reviews__card">
+                     <div class="reviews__header">
+                        <img src="assets/img/reviews-img-1.png" alt="Chioma Okafor" class="reviews__img">
+                        <div>
+                           <h3 class="reviews__name">Chioma Okafor</h3>
+                           <div class="reviews__stars">
+                              <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+                              <span class="reviews__number">5.0</span>
+                           </div>
+                        </div>
+                     </div>
+                     <p class="reviews__comment">
+                        "This Egusi soup reminds me of my grandmother's cooking in Enugu. 
+                        The assorted meat was generous and the delivery was super fast. 
+                        Eat Fine is my go-to for Igbo food in Lagos!"
+                     </p>
+                  </div>
+
+                  <div class="swiper-slide reviews__card">
+                     <div class="reviews__header">
+                        <img src="assets/img/reviews-img-2.png" alt="Emeka Nwosu" class="reviews__img">
+                        <div>
+                           <h3 class="reviews__name">Emeka Nwosu</h3>
+                           <div class="reviews__stars">
+                              <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-half-fill"></i>
+                              <span class="reviews__number">4.5</span>
+                           </div>
+                        </div>
+                     </div>
+                     <p class="reviews__comment">
+                        "The Ofe Nsala with catfish was absolutely divine! Fresh, 
+                        peppery and authentic. I ordered with pounded yam and 
+                        it arrived hot. Best food delivery service in Abuja."
+                     </p>
+                  </div>
+
+                  <div class="swiper-slide reviews__card">
+                     <div class="reviews__header">
+                        <img src="assets/img/reviews-img-3.png" alt="Adaeze Ibe" class="reviews__img">
+                        <div>
+                           <h3 class="reviews__name">Adaeze Ibe</h3>
+                           <div class="reviews__stars">
+                              <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+                              <span class="reviews__number">5.0</span>
+                           </div>
+                        </div>
+                     </div>
+                     <p class="reviews__comment">
+                        "I've been ordering from Eat Fine every weekend. Their Oha 
+                        soup is the real deal — you can taste the fresh oha leaves. 
+                        The Palm wine pairs perfectly. Highly recommend!"
+                     </p>
+                  </div>
+               </div>
+               <div class="swiper-pagination"></div>
+            </div>
+         </div>
+      </section>
+
+      <!--==================== APP ====================-->
+      <section class="app section" id="app">
+         <div class="app__container container grid">
+            <div class="app__data">
+               <span class="section__subtitle">OUR APP</span>
+               <h2 class="section__title app__title">Simple Way To <br> Order Your Food</h2>
+               <p class="app__description">
+                  Download the Eat Fine app and discover authentic Igbo soups 
+                  anywhere in Nigeria. Order and get it delivered to your door in minutes.
+               </p>
+               <div class="app__buttons">
+                  <a href="#" class="button">
+                     <i class="ri-apple-fill"></i> App Store
+                  </a>
+                  <a href="#" class="button button--ghost">
+                     <i class="ri-google-play-fill"></i> Google Play
+                  </a>
+               </div>
+            </div>
+
+            <div class="app__image">
+               <img src="assets/img/app-img.png" alt="Eat Fine App" class="app__img">
+            </div>
+         </div>
+      </section>
+
+      <!--==================== MAP ====================-->
+      <section class="map section" id="map">
+         <span class="section__subtitle">OUR LOCATIONS</span>
+         <h2 class="section__title">Find Us On The Map</h2>
+
+         <div class="map__container container grid">
+            <div class="map__content">
+               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253682.62280701583!2d3.28395955!3d6.548055099999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b2ae68280c1%3A0xdc9e87a367c3d9cb!2sLagos!5e0!3m2!1sen!2sng!4v1700000000000!5m2!1sen!2sng" class="map__iframe" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="map__info-container">
+               <div class="map__info-card">
+                  <i class="ri-map-pin-line map__info-icon"></i>
+                  <h3 class="map__info-title">Lagos Branch</h3>
+                  <p class="map__info-text">15 Admiralty Way <br> Lekki Phase 1, Lagos</p>
+               </div>
+
+               <div class="map__info-card">
+                  <i class="ri-map-pin-line map__info-icon"></i>
+                  <h3 class="map__info-title">Abuja Branch</h3>
+                  <p class="map__info-text">Plot 234 Aminu Kano Cr. <br> Wuse 2, Abuja</p>
+               </div>
+
+               <div class="map__info-card">
+                  <i class="ri-time-line map__info-icon"></i>
+                  <h3 class="map__info-title">Schedule</h3>
+                  <p class="map__info-text">Monday - Sunday <br> 9:00 AM - 10:00 PM</p>
+               </div>
+
+               <div class="map__info-card">
+                  <i class="ri-phone-line map__info-icon"></i>
+                  <h3 class="map__info-title">Phone</h3>
+                  <p class="map__info-text">+234 801 234 5678 <br> +234 902 345 6789</p>
+               </div>
+            </div>
+         </div>
+      </section>
+   </main>
+
+   <!--==================== FOOTER ====================-->
+   <footer class="footer">
+      <div class="footer__container container grid">
+         <div class="footer__brand">
+            <a href="#" class="footer__logo">
+               <i class="ri-restaurant-2-fill"></i> Eat Fine
+            </a>
+            <p class="footer__description">
+               We will fill your belle with <br> delicious Igbo soups, delivered fast.
+            </p>
+            <div class="footer__social">
+               <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                  <i class="ri-facebook-fill"></i>
+               </a>
+               <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+                  <i class="ri-instagram-line"></i>
+               </a>
+               <a href="https://x.com/" target="_blank" class="footer__social-link">
+                  <i class="ri-twitter-x-line"></i>
+               </a>
+               <a href="https://www.tiktok.com/" target="_blank" class="footer__social-link">
+                  <i class="ri-tiktok-line"></i>
+               </a>
+            </div>
+         </div>
+
+         <div class="footer__links-group">
+            <div class="footer__column">
+               <h3 class="footer__title">Company</h3>
+               <ul class="footer__links">
+                  <li><a href="#" class="footer__link">Why Eat Fine?</a></li>
+                  <li><a href="#" class="footer__link">Partner with us</a></li>
+                  <li><a href="#" class="footer__link">About us</a></li>
+                  <li><a href="#" class="footer__link">FAQ</a></li>
+               </ul>
+            </div>
+
+            <div class="footer__column">
+               <h3 class="footer__title">Support</h3>
+               <ul class="footer__links">
+                  <li><a href="#" class="footer__link">Account</a></li>
+                  <li><a href="#" class="footer__link">Support Center</a></li>
+                  <li><a href="#" class="footer__link">Feedback</a></li>
+                  <li><a href="#" class="footer__link">Contact Us</a></li>
+               </ul>
+            </div>
+
+            <div class="footer__column">
+               <h3 class="footer__title">Stay Connected</h3>
+               <p class="footer__newsletter-text">
+                  Questions or feedback? We'd <br> love to hear from you.
+               </p>
+               <form class="footer__form" id="newsletter-form">
+                  <input type="email" placeholder="Email address" class="footer__input" required>
+                  <button type="submit" class="footer__form-btn">
+                     <i class="ri-arrow-right-up-line"></i>
+                  </button>
+               </form>
+            </div>
+         </div>
+      </div>
+
+      <div class="footer__copy">
+         <p>&copy; 2026 Eat Fine. All Rights Reserved.</p>
+      </div>
+   </footer>
+
+   <!--========== SCROLL UP ==========-->
+   <a href="#" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-line"></i>
+   </a>
+
+   <!--=============== SCROLLREVEAL ===============-->
+   <script src="assets/js/scrollreveal.min.js"></script>
+
+   <!--=============== SWIPER JS ===============-->
+   <script src="assets/js/swiper-bundle.min.js"></script>
+
+   <!--=============== MAIN JS ===============-->
+   <script src="assets/js/main.js"></script>
+</body>
+</html>
